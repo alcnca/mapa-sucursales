@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa de gestión de sucursales</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/papaparse@5.3.2/papaparse.min.js"></script>
+
+  <style>
+    html, body { margin: 0; height: 100%; }
+    #map { height: 90vh; }
+    #upload { padding: 10px; }
+  </style>
+</head>
+<body>
+  <div id="upload">
+    <input type="file" id="file-input" accept=".csv">
+    <label>Sube un archivo CSV con tus datos</label>
+  </div>
+  <div id="map"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
